@@ -1,9 +1,7 @@
-# Data Structure and Algorithm Journey
+# About
 
-This is a journey of my DSA Algorithm Problem solving in python language.
+This is a collection of data structure and algorithm courses/notes for personal or professional use cases.
 
-## Days Track
+It include Udacity course and other courses.
 
-|  Day  |    Date    |
-| :---: | :--------: |
-| Day 1 | 07-02-2022 |
+- Made by Sandip Sadhukhan.
