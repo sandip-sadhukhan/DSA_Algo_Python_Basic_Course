@@ -48,3 +48,9 @@ Note that there is a fast-path for dicts that (in practice) only deal with str k
 ![Dict time complexity](./images/dict-time-complexity.jpg)
 
 Source - https://wiki.python.org/moin/TimeComplexity
+
+---
+
+## Linked List
+
+Linkedlist implementation is there in the code file `linked-list.py`.
