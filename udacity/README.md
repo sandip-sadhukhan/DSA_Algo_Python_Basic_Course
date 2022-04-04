@@ -53,4 +53,13 @@ Source - https://wiki.python.org/moin/TimeComplexity
 
 ## Linked List
 
-Linkedlist implementation is there in the code file `linked-list.py`.
+Linkedlist implementation is there in the code file `2. linked-list.py`.
+
+## Stack
+
+It is like a stack of elements. It is used in LIFO (Last in, fast out)
+
+Push -> put an element on the top
+Pop -> delete the topmost element
+
+Stack implementation is there in the code file `3. stack.py`.
