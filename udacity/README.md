@@ -63,3 +63,23 @@ Push -> put an element on the top
 Pop -> delete the topmost element
 
 Stack implementation is there in the code file `3. stack.py`.
+
+## Queue
+
+It uses FIFO, First in, first out.
+
+Head -> element1 -> element2 -> ... -> Tail
+
+Head : first element and the oldest element in the queue, also called peek.
+
+Tail : latest new element added into the queue.
+
+Dequeue : Remove an element from head, is called dequeue.
+
+Enqueue : Add a new element at the tail, it is call enqueue.
+
+**Dequeue:** Can perform dequeue and enqueue from both ends.
+
+**Priority Queue :** Each element has a priority, we remove the highest priority element first. If two element has the same priority then oldest one is removed.
+
+Stack implementation is there in the code file `4. queue.py`.
