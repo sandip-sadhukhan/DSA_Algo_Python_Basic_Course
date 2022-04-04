@@ -83,3 +83,15 @@ Enqueue : Add a new element at the tail, it is call enqueue.
 **Priority Queue :** Each element has a priority, we remove the highest priority element first. If two element has the same priority then oldest one is removed.
 
 Stack implementation is there in the code file `4. queue.py`.
+
+---
+
+# Searching and Sorting
+
+## Binary Search
+
+A search with O(logn) complexity in sorted array.
+
+## Recursion
+
+Function calls itself with a base condition.
