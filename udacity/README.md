@@ -86,7 +86,7 @@ Stack implementation is there in the code file `4. queue.py`.
 
 ---
 
-# Searching and Sorting
+## Searching and Sorting
 
 ## Binary Search
 
@@ -95,3 +95,26 @@ A search with O(logn) complexity in sorted array.
 ## Recursion
 
 Function calls itself with a base condition.
+
+## Sorting
+
+**Inplace Sorting** : No need for extra space to sort the elements.
+
+### Bubble sort
+
+It is a naive algorithm. It is inplace algorithm.
+
+Time Complexity:
+
+- Worse case - O(n^2)
+- Average case - O(n^2)
+- Best case - O(n)
+
+Space Complexity: O(1)
+
+### Merge Sort
+
+It is based on divide and conquer. This is **not** a inplace algorithm.
+
+Time Complexity - O(n log(n))
+Space Complexity - O(n)
