@@ -118,3 +118,33 @@ It is based on divide and conquer. This is **not** a inplace algorithm.
 
 Time Complexity - O(n log(n))
 Space Complexity - O(n)
+
+### Quick Sort
+
+You select a random index and move all the larger element to right side and all the smaller element to the left side. The random index is called pivot.
+Then you recursively select pivot in the left and right array. Convention is to choose last element in the array as a pivot.
+
+Time Complexity -
+
+- Worse case - O(n^2) (when the pivot is already at right place)
+
+- Average and Best case - O(n log(n)) (Pivot is moved to the middle)
+
+Space Complexity - O(1)
+
+## Some more data structures
+
+1. Map: We can store values as a key value pair. If I need to get a perticular value then I need to use the key to find it's value.
+2. Set: In set, there is not a particular ordering of element and set also doesn't allow duplicate element.
+
+## Hashing
+
+To get value in constant time.
+
+```python
+Load Factor = Number of Entries / Number of Buckets
+```
+
+### Hash Map
+
+https://www.youtube.com/watch?v=APAbRkrqDVI
