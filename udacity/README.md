@@ -148,3 +148,5 @@ Load Factor = Number of Entries / Number of Buckets
 ### Hash Map
 
 https://www.youtube.com/watch?v=APAbRkrqDVI
+
+Hash table or hashmap is a type of data structure that maps keys to its value pairs.
