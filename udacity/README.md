@@ -147,6 +147,64 @@ Load Factor = Number of Entries / Number of Buckets
 
 ### Hash Map
 
-https://www.youtube.com/watch?v=APAbRkrqDVI
-
 Hash table or hashmap is a type of data structure that maps keys to its value pairs.
+
+## Trees
+
+It has root and children.
+
+- Trees should be connected.
+- Must not have any cycles.
+
+**Level** : How many connection does it take to reach the root + 1.
+(Level of root node is 1)
+
+**Height** : the number of edges between it and the furthest leaf on the tree. [height]
+(Height of furthest leaf is 0)
+
+**Depth** : the number of edges to the root.
+(Depth of root is 0)
+
+### Tree Traversal
+
+![Tree 1](./images/tree-1.png)
+
+Breath First Search(BFS) : D, B, E, A, C, F
+
+Depth First Search(DFS) :
+
+- Pre-Order: D, B, A, C, E, F
+- InOrder: A, B, C, D, E, F
+- PostOrder: A, C, B, F, E, D
+
+### Search and Delete
+
+#### Search:
+
+In worse case, we have to traverse every single element of the tree to check if the element exists or not.
+
+Time Complexity: O(n)
+
+### Delete:
+
+There should be in three situation.
+
+1. If the deleted node is leaf node, then just delete the node.
+
+2. If the deleted node has one child, then after deleting the node, attach the parent with it's child.
+
+3. If it has 2 nodes, replace the deleted node with a leaf node.
+
+Time Complexity: O(n)
+
+### Insert:
+
+We just need to find a open spot, it may be a leaf node or node has single child.
+
+How much time to take, to find the open spot, where we insert the new node?
+
+In worse case, we have to go into height of the tree. It will take O(log(n)) time in worse case.
+
+Time Complexity: O(log(n))
+
+## Binary Search Tree (BST)
