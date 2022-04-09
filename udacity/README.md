@@ -208,3 +208,12 @@ In worse case, we have to go into height of the tree. It will take O(log(n)) tim
 Time Complexity: O(log(n))
 
 ## Binary Search Tree (BST)
+
+It is a type of binary tree.
+It is sorted tree means,
+`left child < parent < right child`
+
+Search Time complexity
+if n is the node of element
+Best Case : O(log(n))
+worst Case (Unbalance tree) : O(n)
