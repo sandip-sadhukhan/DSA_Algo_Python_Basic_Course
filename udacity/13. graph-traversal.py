@@ -27,8 +27,9 @@ class Graph(object):
     def __init__(self, nodes=None, edges=None):
         self.nodes = nodes or []
         self.edges = edges or []
+        # ['delhi', 'senghai',..] 0th index -> 0th node name
         self.node_names = []
-        self._node_map = {}
+        self._node_map = {}  # {2: Node(2), ...}
 
     def set_node_names(self, names):
         """The Nth name in names should correspond to node number N.
@@ -147,6 +148,14 @@ class Graph(object):
         for node in self.nodes:
             node.visited = False
 
+    def findAllForwardEdgeOfNode(self, node):
+        outputNodes = []
+        for edge in self.edges:
+            if edge.node_from.value == node.value:
+                outputNodes.append(edge.node_to)
+
+        return outputNodes
+
     def dfs_helper(self, start_node):
         """TODO: Write the helper function for a recursive implementation
         of Depth First Search iterating through a node's edges. The
@@ -156,9 +165,20 @@ class Graph(object):
         MODIFIES: the value of the visited property of nodes in self.nodes
         RETURN: a list of the traversed node values (integers).
         """
-        ret_list = [start_node.value]
-        # Your code here
+        ret_list = []
+        stack = [start_node]
 
+        while len(stack) > 0:
+            node = stack.pop(0)
+            if not node.visited:
+                ret_list.append(node.value)
+            node.visited = True
+            nextNodes = self.findAllForwardEdgeOfNode(node)
+            for nextNode in reversed(nextNodes):
+                if not nextNode.visited:
+                    stack.insert(0, nextNode)
+
+        self._clear_visited()
         return ret_list
 
     def dfs(self, start_node_num):
@@ -184,8 +204,21 @@ class Graph(object):
         RETURN: a list of the node values (integers)."""
         node = self.find_node(start_node_num)
         self._clear_visited()
-        ret_list = [node.value]
-        # Your code here
+
+        ret_list = []
+        stack = [node]
+
+        while len(stack) > 0:
+            node = stack.pop(0)
+            if not node.visited:
+                ret_list.append(node.value)
+            node.visited = True
+            nextNodes = self.findAllForwardEdgeOfNode(node)
+            for nextNode in nextNodes:
+                if not nextNode.visited:
+                    stack.append(nextNode)
+
+        self._clear_visited()
         return ret_list
 
     def bfs_names(self, start_node_num):
@@ -233,17 +266,17 @@ graph.insert_edge(9471, 5, 2)  # Sao Paolo <-> London
 
 pp = pprint.PrettyPrinter(indent=2)
 
-print("Edge List")
-pp.pprint(graph.get_edge_list_names())
+# print("Edge List")
+# pp.pprint(graph.get_edge_list_names())
 
-print("\nAdjacency List")
-pp.pprint(graph.get_adjacency_list_names())
+# print("\nAdjacency List")
+# pp.pprint(graph.get_adjacency_list_names())
 
-print("\nAdjacency Matrix")
-pp.pprint(graph.get_adjacency_matrix())
+# print("\nAdjacency Matrix")
+# pp.pprint(graph.get_adjacency_matrix())
 
-print("\nDepth First Search")
-pp.pprint(graph.dfs_names(2))
+# print("\nDepth First Search")
+# pp.pprint(graph.dfs_names(2))
 
 # Should print:
 # Depth First Search

@@ -258,3 +258,19 @@ We can use array or LinkedList to store heap.
 It is a data structure to show relationship between two objects.
 
 `Tree is a specific type of graph.`
+
+### Eulerian Paths
+
+Traverse the graph such a way that each edge should be traversed at least once.
+
+### Eulerian Cycle
+
+Traverse the graph such a way that after traversal each edge should be traverse exactly once and your starting and ending vertex should be the same vertex.
+
+### Haimiltonian Paths
+
+Traverse the graph such a way that each vertex should be traversed at least once.
+
+### Haimiltonian Cycle
+
+Traverse the graph such a way that after traversal each vertex should be traverse exactly once and your starting and ending vertex should be the same vertex.
