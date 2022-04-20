@@ -217,3 +217,44 @@ Search Time complexity
 if n is the node of element
 Best Case : O(log(n))
 worst Case (Unbalance tree) : O(n)
+
+## Heaps
+
+It is a type of tree.
+Tree is either in maximum or minimum order. So that root element either the maximum or minimum element of the tree.
+
+- Heaps doesn't need to be a binary tree. So it can have any number of children.
+
+- It should be a complete tree. means all levels except the last one should be completely full. If the last level isn't totally full, values are added from left to right.
+
+Types:
+
+- Max Heap : Parent element is bigger among it's children. So, root element became the biggest element in the tree.
+
+- Min Heap : Parent element is smaller among it's children. So, root element became the smaller element in the tree.
+
+Search Time Complexity - O(n)
+
+- For example if we take a max heap for searching, and when we get a element smaller that find_val then we will not go to subtree.
+- If we check that root is smaller then the find_val, then immediately we stop calculating.
+
+### Insert
+
+Insert the new element in the first open spot of the tree. Then we **Heapify**.
+
+### Heapify - Max Heap
+
+if the parent element is smaller that it's child the we swap those elements.
+
+Time Complexity - O(log(n))
+Height of the tree
+
+### Heap Implementation
+
+We can use array or LinkedList to store heap.
+
+## Graph (also called Network)
+
+It is a data structure to show relationship between two objects.
+
+`Tree is a specific type of graph.`
