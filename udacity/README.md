@@ -274,3 +274,21 @@ Traverse the graph such a way that each vertex should be traversed at least once
 ### Haimiltonian Cycle
 
 Traverse the graph such a way that after traversal each vertex should be traverse exactly once and your starting and ending vertex should be the same vertex.
+
+---
+
+# Technical interview
+
+1. Clarifying the Question - Confirm the right variant of question
+
+2. Confirming inputs - Make sure of the input and output signature of the algorithm, that you are using.
+
+3. Test Cases - Query about all the edge input cases. eg - null & empty inputs.
+
+4. BrainStorming - Use test cases to find the solution, need a good communication
+
+5. Runtime Analysis - Find the time complexity and tell interviewer before coding
+
+6. Coding - While writing the code, tell the purpose of the code to the interviewer (and not just read the code loud as it is)
+
+7. Debugging - After writing code, see if something wrong with the logic. And dry run the test cases.
